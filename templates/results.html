@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h1 align="center">{{ the_title }}</h1>
+
+<p align="center">这是你输入的数据:</p>
+<table align="center">
+<tr bgcolor="#89c3eb"><td>星座:</td><td>{{ the_phrase }}</td></tr>
+<tr bgcolor="#89c3eb"><td>日期:</td><td>{{ the_letters }}</td></tr>
+</table>
+
+<p align="center">这是{{the_phrase }}今日的运势：</p>
+
+<table  style="table-layout:fixed;" border="3px" cellspacing="0px" bordercolor="white"  align="center">
+<tr bgcolor="#1F779E">
+	<th width="75">信息</th>
+	<th width="250">{{the_date}}</th>
+</tr>
+	
+<tr bgcolor="#89c3eb">
+	<td width="75">星座</td> 
+	<td width="100">{{ the_name }}</td>
+</tr>
+<tr bgcolor="#89c3eb">
+	<td width="75">日期</td> 
+	<td width="100">{{ the_datetime }}</td>
+</tr>
+<tr bgcolor="#89c3eb">
+	<td width="75">综合指数</td> 
+	<td width="100">{{ the_all }}</td>
+</tr>
+<tr bgcolor="#89c3eb">
+	<td width="75">幸运色</td> 
+	<td width="100">{{ the_color }}</td>
+</tr>
+<tr bgcolor="#89c3eb">
+	<td width="75">健康指数</td> 
+	<td width="100">{{ the_health }}</td>
+</tr>
+<tr bgcolor="#89c3eb">
+	<td width="75">爱情指数</td> 
+	<td width="100">{{ the_love }}</td>
+</tr>
+<tr bgcolor="#89c3eb">
+	<td width="75">财运指数</td> 
+	<td width="100">{{ the_money }}</td>
+</tr>
+<tr bgcolor="#89c3eb">
+	<td width="75">幸运数字</td> 
+	<td width="100">{{ the_number }}</td>
+</tr>
+<tr bgcolor="#89c3eb">
+	<td width="75">速配星座</td> 
+	<td width="100">{{ the_QFriend }}</td>
+</tr>
+<tr bgcolor="#89c3eb">
+	<td width="75">工作指数</td> 
+	<td width="100">{{ the_work }}</td>
+</tr>
+<tr bgcolor="#89c3eb">
+	<td width="75">总结</td> 
+	<td width="100">{{ the_summary }}</td>
+</tr>
+</table>
+
+<form method='GET' action='/entry'>
+<p align="center"><input value='返回重新检测' type='SUBMIT'></p>	
+</form>
+<HR style="border:1 dashed #987cb9" width="80%" color=#6495ED SIZE=1>
+<h4 align="center">还有更多有关于十二星座的趣味视频噢(￣▽￣)／</h4>
+<p align="center">【当十二星座+吃鸡！会有怎样的火花呢？？】</p>
+<br/>
+<div class="video" >
+	<div class="vvideo">
+		<iframe src="//player.bilibili.com/player.html?aid=19405492&cid=31646361&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="700" height="500" align="center"> 
+		</iframe>
+	</div>
+</div>
+<form method='GET' action='/viewlog'>
+<p align="center"><input value='查看全部搜索记录' type='SUBMIT'></p>	
+</form>
+
+{% endblock %}

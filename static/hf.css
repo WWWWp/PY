@@ -1,0 +1,124 @@
+body {
+  font-family:      Verdana, Geneva, Arial, sans-serif;
+  font-size:        medium;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border: 3px dotted cornflowerblue;
+  padding: 25px 5px 400px 5px;
+  background-image: url(background.jpg);
+  background-size: cover;
+  max-width: 100%;
+}
+
+/*** 导航条的样式 ***/
+
+#nav ul{
+		width: 1200px;
+		height: 40px;
+		margin: 30px auto;
+		padding:0;
+		list-style:none; 
+		border-top:solid 3px #196282; 
+		border-bottom:solid 3px #196282; 
+		border-left: solid 3px #196282;
+		border-right: solid 3px #196282;
+		background-color: #EEFFF1;
+	}
+
+#nav ul li{
+	width: 200px;
+	float: left;
+	text-align:center;
+	font: 16px/2.5 "微软雅黑";
+}
+
+#nav ul li a{
+	text-decoration:none; color:#364294;
+}
+
+#nav ul li a:hover{
+	display:block; color:#FFFFFF; background:#196282;
+}
+
+
+/*** 此处使用css3的translate水平垂直居中元素使视频居中 ***/
+
+.video{
+	position: relative;
+	height: 500px;
+}
+
+.vvideo{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 700px;
+	height: 500px;
+}
+
+
+a {
+  text-decoration:  none; 
+  font-weight:      600; 
+}
+a:hover {
+  text-decoration:  underline;
+}
+a img {
+  border:           0;
+}
+h2 {
+  font-size:        150%;
+}
+table {
+  margin-left:      20px;
+  margin-right:     20px;
+  caption-side:     bottom;
+  border-collapse:  collapse;
+}
+td, th {
+  padding:          5px;
+  text-align:       left;
+}
+.copyright {
+  font-size:        75%;
+  font-style:       italic;
+}
+.slogan {
+  font-size:        75%;
+  font-style:       italic;
+}
+.confirmentry {
+  font-weight:      600; 
+}
+
+/*** Tables ***/
+
+table {
+font-size:          1em;
+background-color:   #fafcff;
+border:             1px solid #909090;
+color:              #2a2a2a;
+padding:            5px 5px 2px;
+border-collapse:    collapse;
+}
+
+td, th {
+border:             thin dotted gray;
+}
+
+/*** Inputs ***/
+input[type=text] {
+  font-size:        115%;
+  width:            30em;
+}
+input[type=submit] {
+  font-size:        125%;
+}
+select {
+  font-size:        125%;
+}
+
