@@ -15,7 +15,7 @@ def geocode(consName,type)->str:
     answer = response.json()
     return answer
 
-@app.route('/search4', methods=['GET'])
+@app.route('/PY/search4', methods=['GET'])
 def do_search() -> 'html':
     phrase = request.form['phrase']
     letters = request.form['letters']
